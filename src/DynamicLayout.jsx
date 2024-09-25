@@ -95,14 +95,16 @@ const DynamicLayout = () => {
               {controlId === "image" && <img src="placeholder.jpg" alt="Image" />}
             </div>
           ))}
-        </DroppableArea>
-      </DndContext>
-
-      <div className="action-buttons">
+          <div className="action-buttons">
         <button onClick={saveLayout}>Save Layout</button>
         <button onClick={loadLayout}>Load Layout</button>
         <button onClick={publishLayout}>Publish</button>
       </div>
+        </DroppableArea>
+        
+      </DndContext>
+
+      
     </div>
   );
 };
